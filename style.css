@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:wght@400;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+}
+
+:root{
+--Tomato: hsl(4, 100%, 67%);
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Dark-Slate-Grey);
+    font-size: 16px;
+    font-family: "Roboto","sans-serif";
+}
+
+.container{
+    background-color: #fff;
+}
+
+.mobile-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+h1, h2, ul, p{
+    color: var(--Charcoal-Grey);
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h1, h2, ul, form, p, button{
+    margin-left: 20px;
+}
+h1, h2, form, button{
+    margin-bottom: 20px;
+}
+
+ul{
+    margin-bottom: 35px;
+}
+
+p{
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.first-paragraph{
+margin-bottom: 20px;
+}
+
+input {
+    width: 300px; 
+    height: 50px; 
+    border-radius: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+  }
+li {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically align the image and text */
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+
+  li img {
+    margin-right: 10px; /* Add space between the image and the text */
+  }
+
+  button{
+  background-color: var(--Dark-Slate-Grey);
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-image 5s ease, transform 5s ease-in-out; 
+  }
+
+  button:hover{
+    background-image: linear-gradient(to right,#ff005d, #ff6f00);
+  }
+
+  .button-text{
+    color: white;
+  }
+  
+    .attribution {
+         font-size: 11px; 
+         text-align: center; 
+        }
+
+    .attribution a {
+         color: hsl(228, 45%, 44%);
+         }
+ 
+         @media (max-width : 640px){
+            body{
+                background-color: white;
+            }
+
+            .container{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 16px;
+            }
+
+            .button-text{
+                width: 400px;
+            }
+
+            input{
+                width: 400px;
+            }
+         }
+
+         @media (min-width: 640px) {
+
+            .container {
+              max-width: 1000px;  /* Limits the maximum width of the container */
+              height: 650px; /* Set a fixed height or adjust as needed */
+              width: 100%; /* Ensures the container uses available width */
+              margin: 0 auto;  /* Centers the container horizontally */
+              display: flex;
+              justify-content: space-between;
+              align-items: center; /* Vertically centers the content inside the container */
+              border-radius: 30px;
+              padding: 0 20px;
+            }
+          
+            body {
+              display: flex;
+              justify-content: center; /* Centers the container horizontally */
+              align-items: center; /* Centers the container vertically */
+              height: 100vh; /* Ensures the body takes up the full viewport height */
+              margin: 0; /* Removes any default margin around the body */
+            }
+
+            .checkmark{
+                width: 25px;
+            }
+
+           .button-text {
+           display: flex;            
+           justify-content: center;  
+           align-items: center;      
+           height: 50px;             
+           width: 500px;              
+           padding: 0;               
+}
+
+h1{
+    font-size: 70px;
+}
+
+input {
+    width: 500px; 
+    height: 50px; 
+    border-radius: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+
+.content { 
+    flex: 1;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25px;
+}
+
+.desktop-img {
+    width: 50%; /* Adjust the width of the image */
+    height: auto; /* Keep the aspect ratio */
+    max-width: 500px; /* Max-width to avoid it getting too large */
+}
+
+.desktop-img + img{
+    margin-top: 30px;
+}
+
+
+}
+          
+          
