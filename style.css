@@ -131,7 +131,7 @@ li {
             }
 
             .button-text{
-                width: 400px;
+                width: 350px;
             }
 
             input{
@@ -169,6 +169,8 @@ li {
                 width: 60px;
                 margin-left: 15px;
               }
+
+             
 
               /* Success Screen */
          }
@@ -300,6 +302,10 @@ body{
         display: flex; /* Only show on mobile when activated */
         flex-direction: column;
         justify-content: center; /* Adjust for mobile */
+    }
+
+    #form button{
+        max-width: 400px;
     }
 }
 
