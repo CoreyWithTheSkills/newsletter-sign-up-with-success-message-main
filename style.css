@@ -146,7 +146,7 @@ li {
               }
             
               .success-paragraph{
-                margin-bottom: 300px;
+                margin-bottom: 375px;
               }
 
               h1{
@@ -301,11 +301,16 @@ body{
     .success-container {
         display: flex; /* Only show on mobile when activated */
         flex-direction: column;
-        justify-content: center; /* Adjust for mobile */
+        margin-top: 100px;
+        padding: 20px;
     }
 
     #form button{
         max-width: 400px;
+    }
+
+    .success-container img {
+        margin-right: 350px;
     }
 }
 
